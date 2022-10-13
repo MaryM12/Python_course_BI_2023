@@ -40,6 +40,8 @@ def main(input_fastq, output_file_prefix, gc_bounds = (0, 100), length_bounds = 
     in a similarway as gc_bounds).
     :param quality_threshold: (Optional). Default 0. Minimal allowable value of average
     Q-score (phred33 scale) for a read.
+    :param save_filtered - (Optional). Default False. If save_filtered = T is indicated, the filtered out reads are 
+    saved into {output_file_prefix}_failed.fastq file
     """
 # open the input and the 2 output files. Read and process each 4 lines from the input file at once. 
     with open(input_fastq, "r") as file, open(f'{output_file_prefix}_passed.fastq', "w") as file_out, open(f'{output_file_prefix}_failed.fastq', "w") as filtered_file:
