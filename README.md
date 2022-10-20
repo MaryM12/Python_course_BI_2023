@@ -12,7 +12,7 @@ Codename:       focal
 
 PYTHON VERSION
 ------------
-python3.11
+Python3.11
 
 PACKAGE INSTALLATION
 ------------
