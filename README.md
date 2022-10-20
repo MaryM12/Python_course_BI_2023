@@ -33,12 +33,13 @@ Install the requiered packages with pip:
 pip install --upgrade google-api-python-client
 pip install --upgrade pip
 pip install beautifulsoup4
-python3.11 -m pip install pandas==1.4.4
+pip install pandas==1.4.4
 sudo apt-get install python3.11-dev
 sudo apt install build-essential
 pip install biopython
-python3.11 -m pip install aiohttp
-python3.11 -m pip install opencv-python
+pip install aiohttp
+pip install opencv-python
+pip install lxml
 ```
 Run the script:
 ```
