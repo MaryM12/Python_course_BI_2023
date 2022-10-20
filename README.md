@@ -31,7 +31,7 @@ source ./virt2/bin/activate
 Install the requiered packages with pip:
 ```
 pip install --upgrade google-api-python-client
-pip install --upgrade pip
+pip install --upgrade pip             #optional
 pip install beautifulsoup4
 pip install pandas==1.4.4
 sudo apt-get install python3.11-dev
