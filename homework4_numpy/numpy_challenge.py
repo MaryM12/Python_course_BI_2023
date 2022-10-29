@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
 def matrix_multiplication(m1, m2):
     """
-    Takes two arrays and calculates matrix product of the inputs. This is 
+    Takes two arrays and calculates matrix multiplication product of the inputs. This is 
     a scalar only when both m1, m2 are 1-d vectors. The last dimension of m1
     should be the same size as the second-to-last dimension of m2. Otherwise
     raises ValueError
