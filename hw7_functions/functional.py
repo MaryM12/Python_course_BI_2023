@@ -61,3 +61,4 @@ def print_analogue(*args, sep=' ', end='\n'):
     string = list(map(str, args))
     output = sep.join(string) + end
     sys.stdout.write(output)
+    
