@@ -4,7 +4,7 @@ compl_rna = {'A': 'U', 'C': 'G', 'G': 'C', 'U': 'A', 'a': 'u', 'c': 'g', 'g': 'c
 transcr = {'A': 'U', 'C': 'G', 'G': 'C', 'T': 'A', 'a': 'u', 'c': 'g', 'g': 'c', 't': 'a'}
 # create DNA or RNA complement sequence. If not stated explicitly, creates DNA
 def complement(seq):
-    for se in seq:
+    for nucl in seq:
         if (se not in compl_dna) &  (se not in compl_rna):
             # print("Invalid symbol", letter,". Try again!")
             return "Invalid symbol(s)! Try again!"
