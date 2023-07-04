@@ -10,7 +10,7 @@ def complement(seq):
             return "Invalid symbol(s)! Try again!"
         # else:
         #   continue
-    if 'u' in seq.lower() and 't' in seq.lower():
+    if {'u', 't'} <= set(seq.lower()):
         return "Invalid alphabet! U in T in one sequence!" 
     elif 't' in seq.lower():
         new_letters = [compl_dna[se] for se in seq] 
