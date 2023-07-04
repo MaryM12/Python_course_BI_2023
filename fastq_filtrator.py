@@ -59,6 +59,5 @@ def main(input_fastq, output_file_prefix, gc_bounds=(0, 100), length_bounds=(0, 
                 else:
                   #save the filtered out reads if required
                     if save_filtered == True:
-                        filtered_file.write('\n'.join(lines))
-                        filtered_file.write('\n')
+                        filtered_file.write('\n'.join(lines) + '\n')
                 lines = [] #empty the list to proceed to the next read
