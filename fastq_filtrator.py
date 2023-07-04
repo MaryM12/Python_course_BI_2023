@@ -11,7 +11,7 @@ def filter_gc_bounds(gc_bounds, read):
   if isinstance(gc_bounds, int):
      gc_bounds = (0, gc_bounds)
   start, end = gc_bounds[0], gc_bounds[1]
-  return (gc_content >= start) and (gc_content <= end)
+  return start <= gc_content <= end
 
 # Return a Boolean indicator whether the read falls within the allowable range of length        
 def filter_length(length_bounds, read):
