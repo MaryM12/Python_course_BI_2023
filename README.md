@@ -7,4 +7,3 @@ Converts a DNA or RNA sequence into its reverse, complement, or reverse-compleme
 - complement — create a complement seq for DNA (default) or RNA
 - reverse complement — create a reverse-complement seq for DNA (default) or RNA
 
-**Free Software, Hell Yeah!**
