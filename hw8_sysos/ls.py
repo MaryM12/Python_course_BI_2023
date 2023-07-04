@@ -1,4 +1,5 @@
-#! /usr/bin/env python3
+#!/usr/bin/env python3
+
 # ls_function_analogue
 import os
 import sys
