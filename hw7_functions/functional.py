@@ -51,7 +51,7 @@ def func_chain(*args):
     return concat
 
 import sys
-def print_analogue(*args, sep=' ', end='\n'):
+def print_analogue(*args, sep=' ', end='\n', file=sys.stdout):
     """
     Complete print analogue
     :param args: objects to print
@@ -59,7 +59,8 @@ def print_analogue(*args, sep=' ', end='\n'):
     :param end: end character
     :return: print objects in stdout
     """
-    string = list(map(str, args))
+    string = map(str, args)
     output = sep.join(string) + end
-    sys.stdout.write(output)
+    file.write(output)
+
     
