@@ -32,7 +32,8 @@ if __name__ == '__main__':
         if not os.path.isdir(directory):
             sys.stdout.write(f'{directory}' + '\n')
         else:
-            contents = list(sorted(os.listdir(directory)))
+            contents = sorted(os.listdir(directory))
+
             if args.all:
                 contents.extend(['.', '..'])
             else:
