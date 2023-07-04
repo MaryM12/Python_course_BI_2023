@@ -25,7 +25,8 @@ if __name__ == '__main__':
         # check if a directory exists
         if not os.path.exists(directory):
             sys.stderr.write(f'ls: cannot access \'{directory}\': No such file or directory\n')
-            raise sys.exit(0)
+            sys.exit(1)
+
             # continue
         #if it's not a directory - print itself
         if not os.path.isdir(directory):
