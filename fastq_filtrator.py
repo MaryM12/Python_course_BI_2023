@@ -52,7 +52,7 @@ def main(input_fastq, output_file_prefix, gc_bounds=(0, 100), length_bounds=(0, 
                 read = lines[1].upper() 
                 read_quality = lines[3].upper()
                 #process the read
-                if filter_gc_bounds(gc_bounds, read) == True and filter_length(length_bounds, read) == True and filter_quality_threshold(quality_threshold, read_quality) == True:
+                if filter_gc_bounds(gc_bounds, read) and filter_length(length_bounds, read) and filter_quality_threshold(quality_threshold, read_quality):
                   #save the reads which passed the filtering
                     file_out.write('\n'.join(lines)) 
                     file_out.write('\n')
