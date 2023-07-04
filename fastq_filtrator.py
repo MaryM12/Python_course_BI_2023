@@ -7,7 +7,7 @@ def filter_gc_bounds(gc_bounds, read):
   c = read.count("C")
   g = read.count("G")
   gc_total = g+c
-  gc_content = (gc_total/float(len(read)))*100
+  gc_content = (gc_total / float(len(read))) * 100
   if isinstance(gc_bounds, int):
      gc_bounds = (0, gc_bounds)
   start, end = gc_bounds[0], gc_bounds[1]
