@@ -26,7 +26,7 @@ def filter_quality_threshold(quality_threshold, read_quality):
   mean_quality = sum_q/float(len(read_quality))
   return mean_quality >= quality_threshold
 
-def main(input_fastq, output_file_prefix, gc_bounds = (0, 100), length_bounds = (0, 2**32), quality_threshold = 0, save_filtered = False):
+def main(input_fastq, output_file_prefix, gc_bounds=(0, 100), length_bounds=(0, 2**32), quality_threshold=0, save_filtered=False):
     """
     Read from .fastq file and filter the reads by GC content, length and quality.
     The reads which passed filtering are saved into {output_file_prefix}_passed.fastq 
