@@ -7,8 +7,9 @@ def sequential_map(*args):
     """
     *functions, container = args
     for function in functions:
-        container = list(map(function, container))
-    return container
+        container = map(function, container)
+    return list(container)
+
 
 def consensus_filter(*args):
     """
